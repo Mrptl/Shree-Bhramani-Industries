@@ -1,0 +1,29 @@
+{
+  "projectId": "8700847403496192171",
+  "downloadMethod": "curl -L",
+  "screens": [
+    {
+      "name": "Home - Shree Bhramani Industries",
+      "id": "4859bb4a6fc74c4ba455e988a691c4fc",
+      "code": "index.html",
+      "images": [
+        {
+          "localPath": "assets/stitch/home/logo.png",
+          "sourceUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDeNvZioPsuqLqWmTxmKor_DXpqEzWGGDzOELjDwie2-MZnSVNF6lczoN9e3TkUZl5RPnCBUPR00WbOXaBwKJVXlvTpUDTAxetqx90Bn_jxc_T4KFqJ5y3Kkjz0jrCYkbUdxi6HW3Pzm6DaEzSBq9wGUR_thMbO2qxJVNgbIrsj0EOJOhPgues2WB01BomWQSihoj_BlfT0s_3MQ3Uya_p36Yg30B2P-PjK4qoxJmtg6RVYCkkL4pWi2I7J8_LBt_yAkglZTA1GUtE"
+        },
+        {
+          "localPath": "assets/stitch/home/hero-printer.png",
+          "sourceUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuB0-Vb1Nzzt49i1BI7n5NTGBVN7G8FuNI0IvQ1Ky1mOiuznK4mHy27RpRMvbahPXxFlMCrJDZF137SK8ctfo0mNAn79UodGe7ypPKHTc73QBA_v4Pl3WhBy7Lw9FWWmGH1e8yaFYwdQNayYw8xvSeiZNiAFxoI4jOuRA8h6EJ6Y9pfIx1ebjBYreOzfmfu_-_ppIgS34r6fpTDyop_r45oGzlJxXDuf5kOmBPo8BpYQvvNLr5Lsl4qlmPTnhkCRZSUZx8TkGDnP9Yg"
+        },
+        {
+          "localPath": "assets/stitch/home/featured-cij.png",
+          "sourceUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAt-ovaYW_Uz1I-qoyW2z36ZlTo8l0rYQg-9NAQxXLVK512FLPTlaxavklYSWMOCSMJtIDL61V11YFtQEAPLjFwCCL8KUFuvybd7G6y8VEghLKLplgwaYzYFFB40PFnqqZKAMW62sz-391zFPCgguiSvaF1x_cUxHSO-xPKQbaqE1oj1CNO6Kk8CBq6Espz-4qC5KlWPo8JYF8gjUx3UMtb38DSeL1ntXZeblgbz1kxNQYsOsGQoOBZ_2jB5I_tZfH-CyV8qhvTIM4"
+        },
+        {
+          "localPath": "assets/stitch/home/qr-detail.png",
+          "sourceUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAyTHfmR6vnu3uJi1xtctbk6xJXcTIshHiMiG76rTamVgYxinqElWI5x97UWWodLeodLsiIb-S8o4xwZ_8hATou9N6HRkJ6767_zpUoxgV0juR7FX5vD54J9R_cs-i64DR9NBpuHZFtfR1SZhJjGUD1WiAlyV-93lqN76VP5vNyv9v3XpSKnm-JU60ipsF_8953Zrs-ZFlz3zpqGcmpFu7eZ7197Esp9wyt_LH-9BRE_Cz2rNzsNcBrw_P9NTTahK0SbkEJw934iAs"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Content-Type: image/png
+Vary: Origin
+Access-Control-Allow-Origin: *
+Timing-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Length
+ETag: "v0"
+Expires: Sat, 11 Apr 2026 10:02:10 GMT
+Cache-Control: public, max-age=86400, no-transform
+Content-Disposition: inline;filename="unnamed.png"
+X-Content-Type-Options: nosniff
+Date: Fri, 10 Apr 2026 10:02:10 GMT
+Server: fife
+Content-Length: 266243
+X-XSS-Protection: 0
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
