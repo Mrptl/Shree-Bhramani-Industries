@@ -1,0 +1,11 @@
+node_modules/
+.vscode/
+.env
+*.pyc
+__pycache__/
+backend/node_modules/
+backend/.env
+stitch-export.json
+*.py
+check_unused_assets.json
+unused_assets.json
