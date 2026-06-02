@@ -95,20 +95,18 @@ document.addEventListener('DOMContentLoaded', () => {
     let triggerOpenQuoteModal;
 
     // ============================================================
-    // Preloader Fade Out
+    // Preloader Fade Out (Triggers on DOM ready for instant interaction)
     // ============================================================
-    window.addEventListener('load', () => {
-        const preloader = document.getElementById('page-preloader');
-        if (preloader) {
-            // Small delay to ensure the animation is visible for a moment and feels deliberate
+    const preloader = document.getElementById('page-preloader');
+    if (preloader) {
+        // Smooth fade-out after a micro-delay for branding visibility
+        setTimeout(() => {
+            preloader.classList.add('loaded');
             setTimeout(() => {
-                preloader.classList.add('loaded');
-                setTimeout(() => {
-                    preloader.style.display = 'none';
-                }, 400); // match CSS transition duration
-            }, 300);
-        }
-    });
+                preloader.style.display = 'none';
+            }, 400); // match CSS transition duration
+        }, 150); // 150ms is perfect: fast, responsive, but lets the loader spin briefly
+    }
 
     // ============================================================
     // Mobile Menu
