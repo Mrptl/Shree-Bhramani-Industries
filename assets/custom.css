@@ -501,3 +501,37 @@ header nav a:not(.get-quote-btn):not(.flex):not([class*="border-b-2"]):hover::af
     transform-origin: left;
 }
 
+/* --- Timeline Alignment Styles (Fixes Desktop Shifting) --- */
+.timeline-line {
+    position: absolute;
+    left: 1rem; /* Equivalent to left-4 */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e2e8f0; /* slate-200 */
+    transform: translateX(-50%);
+}
+
+.dark .timeline-line {
+    background-color: #1e293b; /* slate-800 */
+}
+
+.timeline-badge {
+    position: absolute;
+    left: 1rem; /* Equivalent to left-4 */
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 2.5rem; /* Equivalent to w-10 */
+    height: 2.5rem; /* Equivalent to h-10 */
+}
+
+@media (min-width: 768px) {
+    .timeline-line {
+        left: 50% !important;
+    }
+    .timeline-badge {
+        left: 50% !important;
+    }
+}
+
+
