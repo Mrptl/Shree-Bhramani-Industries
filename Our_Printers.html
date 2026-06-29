@@ -188,9 +188,19 @@
                     data-filter="cij">
                     CIJ Printers
                 </button>
+                <button
+                    class="filter-btn px-6 py-3 bg-surface-container-low text-on-surface-variant font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all"
+                    data-filter="tto">
+                    TTO Printers
+                </button>
+                <button
+                    class="filter-btn px-6 py-3 bg-surface-container-low text-on-surface-variant font-headline font-bold rounded-lg hover:bg-surface-container-high transition-all"
+                    data-filter="laser">
+                    Laser Printers
+                </button>
             </div>
             <div class="flex items-center gap-2 text-on-surface-variant">
-                <span id="result-count" class="text-sm font-label font-medium uppercase tracking-widest">Showing 15
+                <span id="result-count" class="text-sm font-label font-medium uppercase tracking-widest">Showing 14
                     Results</span>
                 <div class="h-px w-12 bg-outline-variant opacity-20"></div>
             </div>
@@ -357,7 +367,7 @@
             </div>
             
             <!-- BI-CO2 Laser Coder -->
-            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="cij" data-name="BI-CO2 Laser Coder">
+            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="laser" data-name="BI-CO2 Laser Coder">
                 <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/BI-CO2.png" alt="BI-CO2 Laser Coder" />
                 </div>
@@ -373,7 +383,7 @@
             </div>
 
             <!-- BI-FFL Fiber Laser -->
-            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="cij" data-name="BI-FFL Fiber Laser Printer">
+            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="laser" data-name="BI-FFL Fiber Laser Printer">
                 <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/BI-FFL.png" alt="BI-FFL Fiber Laser Printer" />
                 </div>
@@ -389,7 +399,7 @@
             </div>
 
             <!-- BI-TTO Thermal Transfer -->
-            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="tij" data-name="BI-TTO Thermal Transfer Printer">
+            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="tto" data-name="BI-TTO Thermal Transfer Printer">
                 <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/BI-TTO.png" alt="BI-TTO Thermal Transfer Printer" />
                 </div>
@@ -405,7 +415,7 @@
             </div>
 
             <!-- BI-UV Laser Coder -->
-            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="cij" data-name="BI-UV Laser Coder">
+            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="laser" data-name="BI-UV Laser Coder">
                 <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
                     <img loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/BI-UV.png" alt="BI-UV Laser Coder" />
                 </div>
@@ -420,21 +430,6 @@
                 </button>
             </div>
 
-            <!-- BI-Labelling Machine -->
-            <div class="group flex flex-col reveal product-card premium-card p-4 md:p-6" data-category="cij" data-name="BI-Labelling Machine">
-                <div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-4 md:mb-6 relative">
-                    <img loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/printers/BI-LABELLING%20MACHINE.png" alt="BI-Labelling Machine" />
-                </div>
-                <div class="flex-1">
-                    <div class="inline-block mb-3 premium-badge premium-badge-specialty">Specialty</div>
-                    <h3 class="font-headline font-extrabold text-base sm:text-lg md:text-2xl text-on-surface mb-1 md:mb-2 leading-tight">BI-Labelling Machine</h3>
-                    <p class="text-xs md:text-sm text-on-surface-variant mb-4 md:mb-6 line-clamp-2">Automatic high-speed labeling machine for cylinders, jars, bottles, and cartons.</p>
-                </div>
-                <button class="view-specs-btn specs-btn-dynamic w-full py-2.5 md:py-4 text-xs md:text-base bg-surface-container-lowest border border-outline-variant/20 text-primary font-headline font-bold rounded-xl transition-all flex items-center justify-center gap-1 md:gap-2 group/btn" data-title="BI-Labelling Machine" data-category="Specialty" data-image="assets/printers/BI-LABELLING%20MACHINE.png" data-desc="Heavy-duty, high-accuracy automatic industrial labeling machine engineered for precise application on cylindrical bottles, jars, flat cartons, and industrial packaging. Features state-of-the-art PLC touch control." data-specs="['Control System: PLC & Color Touchscreen', 'Labeling Speed: 40 - 120 pcs/min', 'Labeling Accuracy: ±1.0 mm', 'Bottle Diameters: 30mm - 120mm']">
-                    View Specs
-                    <span class="material-symbols-outlined text-sm transition-transform group-hover/btn:translate-x-1" aria-hidden="true">arrow_forward_ios</span>
-                </button>
-            </div>
         </div>
         <section
             class="mt-32 bg-on-surface rounded-xl overflow-hidden flex flex-col md:flex-row items-stretch min-h-[400px]">
