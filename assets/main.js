@@ -109,6 +109,75 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================================
+    // Hero Carousel
+    // ============================================================
+    const heroTrack = document.getElementById('hero-carousel-track');
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroIndicators = document.querySelectorAll('.hero-carousel-container .indicator');
+    const heroPrev = document.getElementById('hero-prev');
+    const heroNext = document.getElementById('hero-next');
+
+    if (heroTrack && heroSlides.length > 0) {
+        let currentSlide = 0;
+        const totalSlides = heroSlides.length;
+        let slideInterval;
+
+        const updateCarousel = (index) => {
+            heroTrack.style.transform = `translateX(-${index * 100}%)`;
+            
+            heroSlides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.classList.add('active-slide');
+                } else {
+                    slide.classList.remove('active-slide');
+                }
+            });
+
+            heroIndicators.forEach((ind, i) => {
+                if (i === index) {
+                    ind.classList.add('active');
+                } else {
+                    ind.classList.remove('active');
+                }
+            });
+        };
+
+        const nextSlide = () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel(currentSlide);
+        };
+
+        const prevSlide = () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel(currentSlide);
+        };
+
+        const startCarousel = () => {
+            slideInterval = setInterval(nextSlide, 6000);
+        };
+
+        const stopCarousel = () => {
+            clearInterval(slideInterval);
+        };
+
+        if (heroNext) heroNext.addEventListener('click', () => { nextSlide(); stopCarousel(); startCarousel(); });
+        if (heroPrev) heroPrev.addEventListener('click', () => { prevSlide(); stopCarousel(); startCarousel(); });
+
+        heroIndicators.forEach((ind, i) => {
+            ind.addEventListener('click', () => {
+                currentSlide = i;
+                updateCarousel(currentSlide);
+                stopCarousel();
+                startCarousel();
+            });
+        });
+
+        // Initialize first slide as active
+        updateCarousel(0);
+        startCarousel();
+    }
+
+    // ============================================================
     // Mobile Menu
     // ============================================================
     const mobileMenuBtn  = document.getElementById('mobile-menu-btn');
