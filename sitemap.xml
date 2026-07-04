@@ -1,33 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
   <url>
     <loc>https://shreebhramaniindustries.com/index.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Products: Industrial Printers (CIJ, TIJ, TTO, Laser, Handheld) -->
   <url>
     <loc>https://shreebhramaniindustries.com/Our_Printers.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
+
+  <!-- Products: Packaging Machinery -->
   <url>
-    <loc>https://shreebhramaniindustries.com/CIJ_Printer_Detail.html</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://shreebhramaniindustries.com/Our_PackageMachinery.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
+
+  <!-- Products: Liquid Filling & Capping Machines -->
+  <url>
+    <loc>https://shreebhramaniindustries.com/Our_LiquidFilling.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Products: Accessories & Consumables -->
+  <url>
+    <loc>https://shreebhramaniindustries.com/Our_Accessories.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Services: Machine Maintenance & AMC -->
+  <url>
+    <loc>https://shreebhramaniindustries.com/machine_maintenance.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Services: Technical Support -->
+  <url>
+    <loc>https://shreebhramaniindustries.com/technical_support.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- About Us -->
   <url>
     <loc>https://shreebhramaniindustries.com/About_Contact.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.75</priority>
   </url>
+
+  <!-- Contact Us -->
   <url>
     <loc>https://shreebhramaniindustries.com/contact_us.html</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.80</priority>
   </url>
+
+  <!-- Legal: Privacy Policy -->
+  <url>
+    <loc>https://shreebhramaniindustries.com/privacy_policy.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- Legal: Terms of Service -->
+  <url>
+    <loc>https://shreebhramaniindustries.com/terms_of_service.html</loc>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+
 </urlset>

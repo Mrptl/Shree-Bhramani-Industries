@@ -450,30 +450,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================================
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
+        contactForm.addEventListener('submit', (e) => {
+            // Allow native mailto: action to proceed
             const submitBtn = contactForm.querySelector('[type="submit"]');
             setButtonLoading(submitBtn, true);
 
-            try {
-                const data = {
-                    name:     contactForm.querySelector('[name="name"]')?.value.trim(),
-                    company:  contactForm.querySelector('[name="company"]')?.value.trim(),
-                    industry: contactForm.querySelector('[name="industry"]')?.value.trim(),
-                    phone:    contactForm.querySelector('[name="phone"]')?.value.trim(),
-                    email:    contactForm.querySelector('[name="email"]')?.value.trim(),
-                    message:  contactForm.querySelector('[name="message"]')?.value.trim()
-                };
-
-                const result = await submitForm('contact', data);
-                showToast(`✅ ${result.message}`, 'success');
+            setTimeout(() => {
+                showToast(`✅ Opening your email client...`, 'success');
                 contactForm.reset();
-
-            } catch (err) {
-                showToast(`❌ ${err.message}`, 'error');
-            } finally {
                 setButtonLoading(submitBtn, false);
-            }
+            }, 1000);
         });
     }
 
@@ -534,64 +520,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================================
     const quoteForms = document.querySelectorAll('.quote-form');
     quoteForms.forEach(quoteForm => {
-        quoteForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
+        quoteForm.addEventListener('submit', (e) => {
+            // Allow native mailto: action to proceed
             const submitBtn = quoteForm.querySelector('[type="submit"]');
             setButtonLoading(submitBtn, true);
 
-            try {
-                const data = {
-                    name:        quoteForm.querySelector('[name="name"]')?.value.trim(),
-                    email:       quoteForm.querySelector('[name="email"]')?.value.trim(),
-                    phone:       quoteForm.querySelector('[name="phone"]')?.value.trim() || '',
-                    product:     quoteForm.querySelector('[name="product"]')?.value.trim() ||
-                                 document.querySelector('[data-product-name]')?.dataset.productName || '',
-                    message:     quoteForm.querySelector('[name="message"]')?.value.trim() || ''
-                };
-
-                // Format WhatsApp pre-filled message
-                const whatsappNumber = '917984170484'; // Country code 91 + phone number 7984170484
-                let whatsappText = `*New Quote Request - Shree Bhramani Industries*\n\n`;
-                whatsappText += `*Name:* ${data.name}\n`;
-                whatsappText += `*Email:* ${data.email}\n`;
-                if (data.phone) {
-                    whatsappText += `*Phone:* ${data.phone}\n`;
-                }
-                if (data.product) {
-                    whatsappText += `*Product of Interest:* ${data.product}\n`;
-                }
-                if (data.message) {
-                    whatsappText += `*Additional Requirements:* ${data.message}\n`;
-                }
-
-                const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
-
-                // Submit to backend in the background so it doesn't block the WhatsApp redirect
-                try {
-                    await submitForm('quote', data);
-                } catch (apiErr) {
-                    console.warn('Backend API submission skipped or failed:', apiErr);
-                }
-
-                // Show success toast and trigger redirect in a new window/tab
-                showToast('✅ Redirecting to WhatsApp...', 'success');
-                window.open(whatsappUrl, '_blank');
+            setTimeout(() => {
+                showToast(`✅ Opening your email client...`, 'success');
                 quoteForm.reset();
+                setButtonLoading(submitBtn, false);
 
                 // If inside get-quote-modal, close it
                 const parentModal = quoteForm.closest('#get-quote-modal');
                 if (parentModal) {
-                    setTimeout(() => {
-                        const closeBtn = document.getElementById('close-quote-modal') || document.getElementById('cancel-quote-btn');
-                        if (closeBtn) closeBtn.click();
-                    }, 500);
+                    const closeBtn = document.getElementById('close-quote-modal') || document.getElementById('cancel-quote-btn');
+                    if (closeBtn) closeBtn.click();
                 }
-
-            } catch (err) {
-                showToast(`❌ Something went wrong. Please try again.`, 'error');
-            } finally {
-                setButtonLoading(submitBtn, false);
-            }
+            }, 1000);
         });
     });
 
